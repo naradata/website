@@ -1,12 +1,15 @@
 function updateTime() {
-    const now = newData();
-    const timeString = now.toLocaleTimeString();
-    const dateString = now.toLocalDateString();
-    const fullString = '${dateString} ${timeString}';
-
-    document.getElementById('datetime').textContent = fullString;   
-}
-
-setInterval(updateTime, 1000);
-
-updateTime();
+    const now = new Date();
+    const timeString = now.toLocaleTimeString(); // "10:42:15 AM"
+    const dateString = now.toLocaleDateString(); // "5/16/2025"
+    const fullString = `${dateString} ${timeString}`;
+  
+    const datetimeEl = document.getElementById('datetime');
+    if (datetimeEl) {
+      datetimeEl.textContent = fullString;
+    }
+  }
+  
+  setInterval(updateTime, 1000);
+  updateTime();
+  
