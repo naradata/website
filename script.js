@@ -13,3 +13,17 @@ function updateTime() {
   setInterval(updateTime, 1000);
   updateTime();
   
+let userInput = "";
+const userTypeEl = document.getElementById('user-typed');
+
+document.addEventListener('keydown', function(event) {
+    if (event.key.length === 1) {
+        userInput += event.key;
+    } else if (event.key == "Backspace") {
+        userInput = userInput.slice(0, -1);
+    } else if (event.key === "Enter") {
+        console.log("User submitted:", userInput);  
+    }
+
+    userTypedEl.textContent = userInput;
+});
