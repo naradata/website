@@ -32,3 +32,14 @@ input::placeholder {
     margin-top: 1rem;
     font-style: italic;
 }
+
+#datetime {
+    background-color: blue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
