@@ -1,9 +1,20 @@
+@font-face {
+    font-display: swap;
+    font-family: 'VT323';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/vt323-v17-latin-regular.woff2') format('woff2');
+  }
+  
+
 body {
     background-color: #eaeaea;
     color: blue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'VT323', monospace;
     padding: 2rem;
     line-height: 1.6;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 /*centers content inside main tags */
@@ -36,12 +47,12 @@ input::placeholder {
 #datetime {
     background-color: blue;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'VT323', monospace;
     padding: 0.3rem 0.6rem;
     display: inline-block;
     margin-bottom: 1.5rem;
     border-radius: 0;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -61,9 +72,6 @@ input::placeholder {
     50% { opacity: 0; }
 }
 
-#user-typed {
-    font-weight: bold;
-}
 
 main:focus {
     outline: none;
@@ -71,11 +79,12 @@ main:focus {
 
 .question {
     font-weight: bold;
-    font-size: 1.05rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .user-line {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     font-weight: normal;
+    margin-top: -0.2rem;
 }
