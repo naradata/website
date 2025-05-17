@@ -16,6 +16,8 @@ function updateTime() {
 let userInput = "";
 const userTypeEl = document.getElementById('user-typed');
 
+document.querySelector('main').focus();
+
 document.addEventListener('keydown', function(event) {
     if (event.key.length === 1) {
         userInput += event.key;

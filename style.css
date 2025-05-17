@@ -47,17 +47,22 @@ input::placeholder {
 
 .cursor {
     display: inline-block;
-    width: 10px;
+    width: 0.65em;
+    height: 1em;
     background-color: blue;
-    color: #eaeaea;
-    animation: blink 1s steps(2, start) infinite;
+    animation: blink 0.5s steps(1, start) infinite;
+    vertical-align: bottom;
 }
 
 @keyframes blink {
-    0%, 100% { background-color: blue; }
-    50% {background-color: transparent; }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 #user-typed {
     font-weight: bold;
+}
+
+main:focus {
+    outline: none;
 }
