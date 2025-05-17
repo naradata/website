@@ -68,3 +68,14 @@ input::placeholder {
 main:focus {
     outline: none;
 }
+
+.question {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.user-line {
+    font-size: 0.95rem;
+    font-weight: normal;
+}
