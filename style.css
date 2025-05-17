@@ -47,11 +47,13 @@ input::placeholder {
 
 .cursor {
     display: inline-block;
-    width: 0.65em;
+    width: 0.6em;
     height: 1em;
     background-color: blue;
-    animation: blink 0.5s steps(1, start) infinite;
-    vertical-align: bottom;
+    animation: blink 1s steps(1, start) infinite;
+    margin-left: 1px;
+    position: relative;
+    top: 0.15em;
 }
 
 @keyframes blink {
